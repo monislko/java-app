@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
-EXPOSE 8090
-ADD target/WebIntranet-0.0.1-SNAPSHOT.war WebIntranet-0.0.1-SNAPSHOT.war
-ENTRYPOINT ["java", "-jar", "WebIntranet-0.0.1-SNAPSHOT.war"]
+FROM openjdk:15-jdk-alpine
+ADD target/spring-boot-2-rest-service-basic-0.0.1-SNAPSHOT.jar spring-boot-2-rest-service-basic-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "/spring-boot-2-rest-service-basic-0.0.1-SNAPSHOT.jar"]
+EXPOSE 80
